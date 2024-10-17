@@ -1,5 +1,5 @@
 # Step 1: Build the Go application
-FROM golang:1.19-alpine AS build
+FROM golang:1.22.6-alpine AS build
 
 WORKDIR /app
 
