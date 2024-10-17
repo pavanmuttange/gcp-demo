@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gcp-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gcp-demo
+  template:
+    metadata:
+      labels:
+        app: gcp-demo
+    spec:
+      containers:
+      - name: gcp-demo
+        image: gcr.io/gcp-demo-438911/gcp-demo:latest
+        ports:
+        - containerPort: 8003

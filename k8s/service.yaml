@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gcp-demo
+spec:
+  selector:
+    app: gcp-demo
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8003
+  type: LoadBalancer
