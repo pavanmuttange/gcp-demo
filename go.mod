@@ -1,4 +1,4 @@
-module github.com/gcp-demo
+module gcp-demo
 
 go 1.22.6
 

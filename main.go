@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"gcp-demo/controllers"
 
-	"github.com/gcp-demo/controllers"
 	"github.com/gin-gonic/gin"
 )
 
