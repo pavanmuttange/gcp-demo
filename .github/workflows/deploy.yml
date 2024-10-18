@@ -18,16 +18,16 @@
 #     - name: Set up Google Cloud SDK
 #       uses: google-github-actions/setup-gcloud@v2
 #       with:
-#         project_id: gcp-demo-438911
+#         project_id: deep-tracer-426413-h4
 
 #     - name: Configure Docker
 #       run: gcloud auth configure-docker
 
 #     - name: Build the Docker image
-#       run: docker build -t gcr.io/gcp-demo-438911/gcp-demo:latest .
+#       run: docker build -t gcr.io/deep-tracer-426413-h4/gcp-demo:latest .
 
 #     - name: Push the Docker image to GCR
-#       run: docker push gcr.io/gcp-demo-438911/gcp-demo:latest
+#       run: docker push gcr.io/deep-tracer-426413-h4/gcp-demo:latest
 
 #     - name: Apply Kubernetes deployment
 #       run: |
@@ -53,23 +53,23 @@ jobs:
     - name: Set up Google Cloud SDK
       uses: google-github-actions/setup-gcloud@v2
       with:
-        project_id: gcp-demo-438911
+        project_id: deep-tracer-426413-h4
 
     - name: Configure Docker
       run: gcloud auth configure-docker
 
     - name: Build the Docker image
-      run: docker build -t gcr.io/gcp-demo-438911/gcp-demo:latest .
+      run: docker build -t gcr.io/deep-tracer-426413-h4/gcp-demo:latest .
 
     - name: Push the Docker image to GCR
-      run: docker push gcr.io/gcp-demo-438911/gcp-demo:latest
+      run: docker push gcr.io/deep-tracer-426413-h4/gcp-demo:latest
 
     - name: Get GKE credentials
       uses: google-github-actions/get-gke-credentials@v1
       with:
-        cluster_name: gcp-demo	
-        location: us-east4         # Replace with the region (e.g., us-central1)
-        project_id: gcp-demo-438911
+        cluster_name: autopilot-cluster-1
+        location: us-central1         # Replace with the region (e.g., us-central1)
+        project_id: deep-tracer-426413-h4
 
     - name: Apply Kubernetes deployment
       run: |
