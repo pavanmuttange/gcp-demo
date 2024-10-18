@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: gcp-demo
-        image: gcr.io/deep-tracer-426413-h4/gcp-demo:latest
+        image: gcr.io/deep-tracer-426413-h4/go-gcp:latest
         ports:
         - containerPort: 8003
